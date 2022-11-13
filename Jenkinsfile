@@ -11,8 +11,8 @@ node ('ubuntu'){
         echo 'Hello World'
     }
     stage('install elk') {
-        docker{
+//        docker{
             image 'elasticsearch:7.17.7'    
-        }
+//        }
     }
 }    
