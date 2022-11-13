@@ -10,4 +10,9 @@ node ('ubuntu'){
     stage('Wshow Hello') {
         echo 'Hello World'
     }
+    stage('install elk') {
+        docker{
+            image 'elasticsearch:7.17.7'    
+        }
+    }
 }    
