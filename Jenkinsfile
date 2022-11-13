@@ -6,8 +6,8 @@
 //    }
 //}
 
-pipeline {
-    agent ('ubuntu'){
-      echo 'Hello World'
-    }    
+node ('ubuntu'){
+    stage('Wshow Hello') {
+        echo 'Hello World'
+    }
 }    
