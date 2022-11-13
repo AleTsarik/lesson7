@@ -8,10 +8,6 @@
 
 pipeline {
     agent ('ubuntu'){
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+      echo 'Hello World'
     }    
 }    
