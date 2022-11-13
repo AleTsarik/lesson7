@@ -12,7 +12,7 @@ node ('ubuntu'){
     }
     stage('install elk') {
 //        docker{
-            image 'elasticsearch:7.17.7'    
+            docker 'elasticsearch:7.17.7'    
 //        }
     }
 }    
