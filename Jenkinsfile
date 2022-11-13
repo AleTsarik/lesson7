@@ -19,7 +19,7 @@ pipeline{
             //    sh 'echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list'
             //    sh 'sudo apt update'
             //    sh 'sudo apt install elasticsearch'
-                sh 'docker run -d elasticsearch:7.17.7'
+                sh 'docker pull -d elasticsearch:7.17.7'
             }
         }
     }
