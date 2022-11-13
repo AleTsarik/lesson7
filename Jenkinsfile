@@ -6,17 +6,14 @@
 //      }
 //    }
 //}
-
-
 pipeline{
     agent ('ubuntu') {
     stages {
         stage('show Hello') {
             steps{
-            echo 'Hello World'
+                sh 'echo \'Hello World\''
             }
         }
-    
         stage('install elk') {
             steps{
                 sh 'docker pull elasticsearch:7.17.7'
